@@ -601,3 +601,801 @@ nav {
   width: 200px;
   text-align: center;
 }
+
+.sec-7 {
+  background-color: #e7effa;
+  color: #02033b;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.sec-7 h2 {
+  font-size: 56px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sec-7-flex-con {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.sec-7-flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box-top {
+  background-image: url(./Images/flexbox-top-img-1.png);
+  height: 180px;
+  width: 320px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.flex-box-top-2 {
+  background-image: url(./Images/flexbox-top-img-2.png);
+  height: 180px;
+  width: 320px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.flex-box-top-3 {
+  background-image: url(./Images/flexbox-top-img-3.png);
+  height: 180px;
+  width: 320px;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.flex-box-top-h4 {
+  background-color: #ffffff;
+  color: #02033b;
+  padding: 20px;
+  height: 44px;
+  width: 112px;
+  border: none;
+  border-radius: 30px;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.flex-box-bottom {
+  background-color: #ffffff;
+  color: #02033b;
+  padding: 50px;
+  height: 300px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.sec-7-btn {
+  background-color: #ffc247;
+  color: #02033b;
+  display: flex;
+  gap: 10px;
+  height: 55px;
+  width: 180px;
+  padding: 20px;
+  border-radius: 42px;
+  border: none;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #02033b;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer main {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+}
+
+.ft-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 312px;
+}
+
+.icon-con {
+  display: flex;
+  gap: 20px;
+}
+
+.Policy {
+  display: flex;
+  gap: 20px;
+}
+
+.ft-flex li {
+  list-style-type: disc;
+  color: #ffc247;
+}
+
+.ft-card {
+  background-color: #ffc247;
+  color: #02033b;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 436px;
+  border-radius: 42px;
+}
+
+.ft-card form {
+  display: flex;
+}
+
+.ft-card form input {
+  height: 30px;
+  width: 250px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: none;
+}
+
+.ft-card form button {
+  height: 30px;
+  width: 100px;
+  background-color: #02033b;
+  color: white;
+  border: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.license {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+  justify-content: left;
+  position: relative;
+  left: 0;
+}
+
+/* =========================================================
+   CERTO — responsive.css
+   Everything here is ADDITIVE to style.css.
+   Nothing in style.css is edited or overridden at desktop width.
+   ========================================================= */
+
+/* -----------------------------------------------------------
+   1. SCROLL-REVEAL ANIMATIONS
+   Elements with class="reveal" fade + slide up into view.
+   JS (script.js) toggles the "active" class via IntersectionObserver.
+----------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger children slightly when several reveal together */
+.row-1 .block.reveal:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.row-1 .block.reveal:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.sec-7-flex-con .sec-7-flex-box.reveal:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.sec-7-flex-con .sec-7-flex-box.reveal:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+/* -----------------------------------------------------------
+   2. MARQUEE (replaces the scrollbar in the reviews section)
+----------------------------------------------------------- */
+.box-cont {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 5%,
+    #000 95%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 5%,
+    #000 95%,
+    transparent 100%
+  );
+}
+
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.box-cont:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* -----------------------------------------------------------
+   3. HOVER / MICRO-INTERACTIONS
+   Additive only — base styles stay in style.css.
+----------------------------------------------------------- */
+.h-btn-1,
+.h-btn-2,
+.sec-3-btn-1,
+.sec-3-btn-2,
+.sec-4-btn-1,
+.sec-4-btn-2,
+.sec-5-btn-1,
+.sec-5-btn-2,
+.sec-6-card button,
+.sec-6-write-up button,
+.sec-7-btn,
+.nav-links button {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.h-btn-1:hover,
+.sec-3-btn-1:hover,
+.sec-4-btn-1:hover,
+.sec-5-btn-1:hover,
+.sec-7-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(2, 3, 59, 0.18);
+}
+
+.h-btn-2:hover,
+.sec-3-btn-2:hover,
+.sec-4-btn-2:hover {
+  transform: translateY(-3px);
+  background-color: #02033b;
+  color: #ffffff;
+}
+
+.h-btn-2:hover p,
+.sec-3-btn-2:hover p,
+.sec-4-btn-2:hover p {
+  color: #ffffff;
+}
+
+.sec-5-btn-2:hover {
+  transform: translateY(-3px);
+  background-color: #ffffff;
+}
+
+.sec-5-btn-2:hover p {
+  color: #4335de;
+}
+
+.sec-6-card button:hover,
+.sec-6-write-up button:hover {
+  transform: translateY(-3px);
+  background-color: #02033b;
+}
+
+.box {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(2, 3, 59, 0.15);
+}
+
+.block img {
+  transition: transform 0.3s ease;
+}
+
+.block:hover img {
+  transform: scale(1.1) translateY(-4px);
+}
+
+.sec-7-flex-box {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-radius: 30px;
+}
+
+.sec-7-flex-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(2, 3, 59, 0.12);
+}
+
+.icon {
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: translateY(-4px);
+  opacity: 0.8;
+}
+
+.sec-3-image img,
+.hero-float {
+  transition: transform 0.4s ease;
+}
+
+.sec-3-image:hover img {
+  transform: scale(1.03);
+}
+
+/* -----------------------------------------------------------
+   4. MOBILE NAV TOGGLE (hamburger)
+   Hidden on desktop, shown only inside the mobile media query below.
+----------------------------------------------------------- */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 34px;
+  height: 34px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #02033b;
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* =========================================================
+   5. RESPONSIVE BREAKPOINTS
+   Desktop rules in style.css are left completely alone above 1024px.
+   ========================================================= */
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  nav {
+    padding: 20px 30px;
+  }
+
+  .Hero {
+    height: auto;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Hero-write-up {
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+
+  .Hero-write-up h1 {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  .hero-p {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .hero-float {
+    left: 400px;
+    top: -350px;
+    max-width: 160px;
+  }
+
+  .boxes h2 {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 30px;
+    height: auto;
+  }
+
+  .box {
+    width: 320px;
+    height: auto;
+    min-height: 230px;
+  }
+
+  .sec-3 {
+    padding: 40px 30px 0;
+    gap: 30px;
+  }
+
+  .sec-3-write-up {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-3-write-up h2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-3-image {
+    height: 380px;
+    width: 380px;
+    flex-shrink: 0;
+  }
+
+  .sec-3-image img {
+    height: 360px;
+    width: 360px;
+  }
+
+  .sec-4-main-cont {
+    width: 90%;
+  }
+
+  .row-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sec-6 main {
+    padding: 40px 30px;
+  }
+
+  .sec-6-card,
+  .sec-6-write-up {
+    width: 48%;
+  }
+
+  .sec-7-flex-con {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  footer main {
+    padding: 0 30px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .ft-card {
+    width: 100%;
+    max-width: 436px;
+  }
+
+  .license {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 30px;
+    margin-top: 40px;
+  }
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .Hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Hero-write-up {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+
+  .Hero-write-up h1 {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 100%;
+  }
+
+  .hero-p {
+    max-width: 100%;
+    font-size: 17px;
+  }
+
+  .Hero-btn {
+    flex-wrap: wrap;
+  }
+
+  .h-btn-1,
+  .h-btn-2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-float {
+    display: none;
+  }
+
+  .Hero-image {
+    padding: 0;
+  }
+
+  .Hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .boxes h2 {
+    font-size: 28px;
+    line-height: 36px;
+    padding: 0 20px;
+  }
+
+  .box {
+    width: 280px;
+  }
+
+  .sec-3 {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 0;
+    text-align: center;
+  }
+
+  .sec-3-write-up {
+    padding: 0;
+    align-items: center;
+  }
+
+  .sec-3-write-up h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .sec-3-btn {
+    width: 100%;
+  }
+
+  .sec-3-btn-1,
+  .sec-3-btn-2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sec-3-image {
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+  }
+
+  .sec-3-image img {
+    height: 280px;
+    width: 280px;
+  }
+
+  .sec-4 h2 {
+    width: 100%;
+    padding: 0 20px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .sec-4-main-cont {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .row-1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .sec-4-btn {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .sec-4-btn-1,
+  .sec-4-btn-2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sec-5 main {
+    padding: 40px 20px;
+  }
+
+  .sec-5-btn {
+    flex-wrap: wrap;
+  }
+
+  .sec-5-btn-1,
+  .sec-5-btn-2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sec-6 main {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .sec-6-card,
+  .sec-6-write-up {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .sec-7 h2 {
+    font-size: 34px;
+  }
+
+  .sec-7-flex-con {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .sec-7-flex-box,
+  .flex-box-top,
+  .flex-box-top-2,
+  .flex-box-top-3,
+  .flex-box-bottom {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  footer main {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .ft-flex,
+  .ft-card {
+    width: 100%;
+  }
+
+  .ft-card form input {
+    flex: 1;
+    width: auto;
+  }
+
+  .license {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+/* ---------- Small mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .logo h2,
+  .logo h2 a {
+    font-size: 26px;
+  }
+
+  .Hero-write-up h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .box {
+    width: 250px;
+    padding: 16px;
+  }
+
+  .sec-3-image,
+  .sec-3-image img {
+    height: 240px;
+    width: 240px;
+  }
+
+  .sec-7 h2 {
+    font-size: 26px;
+  }
+
+  .ft-card form {
+    flex-direction: column;
+  }
+
+  .ft-card form input,
+  .ft-card form button {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .ft-card form input {
+    margin-bottom: 10px;
+  }
+}
