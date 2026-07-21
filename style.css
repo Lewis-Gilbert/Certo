@@ -1399,3 +1399,172 @@ footer main {
     margin-bottom: 10px;
   }
 }
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  nav {
+    padding: 20px 30px;
+  }
+
+  .Hero {
+    height: auto;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .Hero-write-up {
+    margin-left: 40px;
+    margin-top: 100px;
+  }
+
+  .Hero-write-up h1 {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    font-size: 46px;
+    line-height: 56px;
+  }
+
+  .hero-p {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  .hero-float {
+    left: 400px;
+    top: -350px;
+    max-width: 160px;
+  }
+
+  .boxes h2 {
+    width: 100%;
+    max-width: 500px;
+    padding: 0 30px;
+    height: auto;
+  }
+
+  .feature-images {
+    height: auto;
+    padding: 0 30px;
+  }
+
+  .feature-images img {
+    max-height: 80px;
+    width: auto;
+  }
+
+  .box {
+    width: 320px;
+    height: auto;
+    min-height: 230px;
+  }
+
+  .sec-3 {
+    padding: 40px 30px 0;
+    gap: 30px;
+  }
+
+  .sec-3-write-up {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-3-write-up h2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .sec-3-image {
+    height: 380px;
+    width: 380px;
+    flex-shrink: 0;
+  }
+
+  .sec-3-image img {
+    height: 360px;
+    width: 360px;
+  }
+
+  .sec-4-main-cont {
+    width: 90%;
+  }
+
+  .row-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sec-6 main {
+    padding: 40px 30px;
+  }
+
+  .sec-6-card,
+  .sec-6-write-up {
+    width: 48%;
+  }
+
+  .sec-7-flex-con {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 30px;
+  }
+
+  footer main {
+    padding: 0 30px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .ft-card {
+    width: 100%;
+    max-width: 436px;
+  }
+
+  .license {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 30px;
+    margin-top: 40px;
+  }
+}
+
+/* Base rule (applies at all sizes) */
+.feature-images img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tablet ≤ 1024px */
+@media (max-width: 1024px) {
+  .feature-images {
+    height: auto;
+    padding: 0 30px;
+  }
+
+  .feature-images img {
+    max-height: 80px;
+    width: auto;
+  }
+}
+
+/* Mobile ≤ 768px */
+@media (max-width: 768px) {
+  .feature-images {
+    padding: 0 20px;
+  }
+
+  .feature-images img {
+    max-height: 60px;
+  }
+}
+
+/* Small mobile ≤ 480px */
+@media (max-width: 480px) {
+  .feature-images img {
+    max-height: 44px;
+  }
+}
