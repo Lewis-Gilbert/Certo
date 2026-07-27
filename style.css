@@ -1517,6 +1517,7 @@ footer main {
 
   .sec-7-btn {
     width: 200px;
+    display: none;
   }
 
   .ft-card form {
