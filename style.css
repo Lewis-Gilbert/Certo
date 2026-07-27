@@ -1515,6 +1515,10 @@ footer main {
     font-size: 26px;
   }
 
+  .sec-7-btn {
+    width: 200px;
+  }
+
   .ft-card form {
     flex-direction: column;
   }
